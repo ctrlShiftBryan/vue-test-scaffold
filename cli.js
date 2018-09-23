@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const templateName = 'VueTestTemplate.js';
 const ignored = ['.git', 'node_modules']
 const { lstatSync, readdir, access, constants, readFile, writeFile } = require('fs');
