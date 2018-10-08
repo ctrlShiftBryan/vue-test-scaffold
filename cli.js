@@ -15,7 +15,7 @@ const findFiles = (path) => {
           findFiles(fullPath)
         }
         else if( file.indexOf('.vue') > -1 ){
-          const testShouldBe = fullPath.replace('.vue', '.test.js')
+          const testShouldBe = fullPath.replace('.vue', '.unit.test.js')
           access(testShouldBe, constants.F_OK, (err) => {
             if(err){
               createTestFile(testShouldBe, file);
